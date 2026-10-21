@@ -1,11 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+import CounterBox_01 from './components/CounterBox_01.vue'
+
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <h1> Vue Pinia </h1>
+  <CounterBox_01 />
 </template>
 
 <style scoped></style>
