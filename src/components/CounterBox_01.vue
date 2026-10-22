@@ -4,7 +4,10 @@ import { useCounterStore } from '@/stores/counter'
 
 // 2. 实例化 Store
 // 组件内调用：在组件里 useCounterStore() 并直接读写。
+// 调用 useCounterStore() 这个方法，会返回一个大对象（也就是这个 Store 的实例）
+// 然后把它存到 counterStore 变量里之后，就可以 counterStore.count 去读取数据了
 const counterStore = useCounterStore()
+
 
 </script>
 
