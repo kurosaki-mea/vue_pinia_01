@@ -3,13 +3,16 @@ import { ref, computed } from 'vue'
 
 // 定义并导出 Store（仓库）
 export const useCounterStore = defineStore('counter', () => {
-  // 1. 对应 State（数据/状态）
+  // 1. State 对应 （数据/状态）
+  // 【存数据】
   const count = ref(0)
 
-  // 2. 对应 Getters（计算属性，自动缓存）
+  // 2. Getters 对应 （计算属性，自动缓存）
+  // 【算数据/计算属性】
   const doubleCount = computed(() => count.value * 2)
 
-  // 3. 对应 Actions（方法/业务逻辑）
+  // 3. Actions 对应 （方法/业务逻辑）
+  // 【改数据的方法】
   function increment() {
     count.value++
   }
