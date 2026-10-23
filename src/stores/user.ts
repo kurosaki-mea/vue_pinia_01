@@ -26,8 +26,10 @@ export const useUserStore = defineStore('user', () => {
 
     // 4. Actions: 退出登录方法
     function logout() {
+        // 清空 Pinia 内存里的状态：
         token.value = ''
         userInfo.value = {}
+        // 清空浏览器本地持久化缓存：
         localStorage.removeItem('token')
         localStorage.removeItem('userInfo')
     }

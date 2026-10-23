@@ -4,14 +4,10 @@
 </script>
 <template>
     <div>
-        <h1>这是主页 home</h1>
-        <nav>
-            <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/login">登录</RouterLink>
-            <RouterLink to="/dashboard">后台</RouterLink>
-        </nav>
+        <h1> 主页 Home /</h1>
+        123...
     </div>
     <!-- 路由出口 -->
-    <RouterView />
+    <!-- <RouterView /> -->
 </template>
 <style lang="css" scoped></style>
