@@ -33,7 +33,7 @@ const handleLogout = () =>{
     */
 
     // 提示
-    // alert(`您已经退出登录！账号：${userName}`)
+    alert(`您已经退出登录！账号：${userName}`)
     console.log(userName)
 
     // 回到登录页
